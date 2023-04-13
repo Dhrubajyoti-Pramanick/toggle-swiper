@@ -1,0 +1,66 @@
+ul {
+    padding: 0;
+    margin: 0;
+}
+li {
+    list-style: none;
+}
+#togg {
+    height: 2.5rem;
+}
+
+#navItems {
+    display: none;
+}
+.navList {
+    background-color: white;
+    margin-top: 0;
+    transform: scaleY(0);
+    transform-origin: top;
+    height: auto;
+    animation-name: myframes;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+}
+.navList li{
+    border-bottom: 1px solid lightgray;
+    padding-left: 2rem;
+    
+}
+.cj {
+    display: block !important;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(10px);
+    top: 3.5rem;
+    display: none;
+    left: 0%;
+}
+a {
+    text-decoration: none;
+}
+.expand {
+    transform: scaleY(1);
+}
+@media screen and (min-width: 768px) {
+    .navList {
+        background-color: transparent;
+        transform: scaleY(1);
+        animation: none;
+    }
+    .navList li{
+        border: none;
+    }
+}
+@keyframes myframes {
+    from {
+        transform: scaleY(0);
+    }
+
+    to {
+        transform: scaleY(1);
+    }
+    
+}

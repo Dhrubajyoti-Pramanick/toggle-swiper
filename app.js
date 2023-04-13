@@ -21,3 +21,19 @@ togg.addEventListener('click',()=>{
         flag = true;
     }
 })
+// toggle js
+const slides = document.querySelectorAll(".slides");
+console.log(slides.length);
+let count=0;
+
+// for(let i=0;i<slides.length;i++){
+//     if(document.getElementById('next').onclick = ()=>{
+//         if(count<3) {
+//             count++;
+//             slides[count].classList.toggle('d-block');
+//         } else {
+//             count = 0;
+//             slides[count].classList.toggle('d-block');
+//         }
+//     });
+// }

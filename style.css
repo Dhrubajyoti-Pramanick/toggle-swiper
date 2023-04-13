@@ -8,7 +8,7 @@ li {
 #togg {
     height: 2.5rem;
 }
-
+/* menu toggle */
 #navItems {
     display: none;
 }
@@ -44,16 +44,6 @@ a {
 .expand {
     transform: scaleY(1);
 }
-@media screen and (min-width: 768px) {
-    .navList {
-        background-color: transparent;
-        transform: scaleY(1);
-        animation: none;
-    }
-    .navList li{
-        border: none;
-    }
-}
 @keyframes myframes {
     from {
         transform: scaleY(0);
@@ -63,4 +53,30 @@ a {
         transform: scaleY(1);
     }
     
+}
+/* carousel */
+#prev {
+    position: absolute;
+    left: 0%;
+    z-index: 1;
+    bottom: 45%;
+}
+#next {
+    position: absolute;
+    z-index: 1;
+    right: 0%;
+    bottom: 45%;
+}
+@media screen and (min-width: 768px) {
+    .navList {
+        background-color: transparent;
+        transform: scaleY(1);
+        animation: none;
+    }
+    .navList li{
+        border: none;
+    }
+    #next {
+        right: 50%;
+    }
 }

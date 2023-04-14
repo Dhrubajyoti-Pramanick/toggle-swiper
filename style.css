@@ -67,6 +67,55 @@ a {
     right: 0%;
     bottom: 45%;
 }
+/* swipe */
+.swiper {
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    width: 100%;
+    height: 100%;
+}
+.swiper div img {
+    object-fit: contain;
+}
+@media screen and (min-width: 300px){
+    .swiper div img {
+        width: 22rem;
+    }
+}
+@media screen and (min-width: 350px){
+    .swiper div img {
+        width: 28rem;
+    }
+}
+@media screen and (min-width: 450px){
+    .swiper div img {
+        width: 35rem;
+    }
+}
+@media screen and (min-width: 550px){
+    .swiper div img {
+        width: 41rem;
+    }
+}
+@media screen and (min-width: 650px){
+    .swiper div img {
+        width: 48rem;
+
+    }
+}
+#aprev{
+    position: absolute;
+    left: 0%;
+    z-index: 1;
+    bottom: 45%;
+}
+#anext {
+    position: absolute;
+    z-index: 1;
+    right: 0%;
+    bottom: 45%;
+}
+
 @media screen and (min-width: 768px) {
     .navList {
         background-color: transparent;
@@ -80,3 +129,5 @@ a {
         right: 50%;
     }
 }
+
+  
